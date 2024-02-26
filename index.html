@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator &mdash; Project-1</title>
+  </head>
+  <body>
+    <div class="container">
+      <article class="card">
+        <div class="card__form">
+          <!-- day -->
+          <div class="form-input">
+            <label for="input-day" class="card__label card__label--day"
+              >Day</label
+            >
+            <input
+              class="card__input"
+              type="number"
+              name="day"
+              id="input-day"
+              placeholder="DD"
+              min="0"
+              max="31"
+              required
+              tabindex="0"
+            />
+            <span class="card__error-msg">Try a Valid day</span>
+          </div>
+          <!-- month -->
+          <div class="form-input">
+            <label for="input-month" class="card__label card__label--month"
+              >Month</label
+            >
+            <input
+              class="card__input"
+              type="number"
+              name="month"
+              id="input-month"
+              placeholder="MM"
+              min="0"
+              max="12"
+              required
+              tabindex="0"
+            />
+            <span class="card__error-msg">Try a Valid Month</span>
+          </div>
+          <!-- year -->
+
+          <div class="form-input">
+            <label for="input-year" class="card__label card__label--year"
+              >Year</label
+            >
+            <input
+              class="card__input"
+              type="number"
+              name="year"
+              id="input-year"
+              placeholder="YYYY"
+              required
+              tabindex="0"
+              min="1600"
+            />
+            <span class="card__error-msg">Try a Valid Year</span>
+          </div>
+        </div>
+        <div class="card__submit">
+          <button class="card__btn">Calculate</button>
+        </div>
+        <div class="card__result-field">
+          <span class="card__span">You are</span>
+          <span class="card__result">--</span>
+          <span class="card__span">Years Old.</span>
+        </div>
+      </article>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
